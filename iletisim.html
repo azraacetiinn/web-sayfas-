@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <style>
+        body {
+            background-color: rgb(246, 194, 212);
+
+        }
+
+        contact form {
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: left;
+        }
+
+        .contact label {
+            font-weight: bold;
+        }
+
+        .contact input,
+        .contact textarea {
+            padding: 10px;
+            border: 2px solid #ffb1c1;
+            border-radius: 10px;
+            font-size: 1em;
+            width: 100px;
+            resize: pointer;
+        }
+
+        .contact button :hover {
+            background-color: #ff8fab;
+        }
+
+        .about {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .contact {
+            background-color: #ffe4ec;
+            text-align: center;
+            padding: 50px 20px;
+
+        }
+
+        h1 {
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>İLETİŞİM</h1>
+    <header>
+        <section id="contact" class="contact">
+            <h2>Bize ulaşın</h2>
+            <p>Soru, sipariş için bize yazabilirsiniz</p>
+            <form action="#" method="post">
+                <label for="name">Ad Soyad</label>
+                <input type="text" id="name" name="name" placeholder="Adınızı girin" required>
+                <label for="email">E-posta</label>
+                <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin">
+                <label for="message"> Mesajınız</label>
+                <textarea id="message" name="message" placeholder="Mesajınızı buraya yazın." rows="5"
+                    required></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </section>
+    </header>
+</body>
+
+</html>
