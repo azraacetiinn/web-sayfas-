@@ -1,107 +1,177 @@
-header{
-    background-color: palevioletred;
-    text-align: center;
-    color: black;
-    padding: 20px;
-    height: 80px;
-}
-body{
-    font-family: "poppins",sans-serif;
-    margin: 0%;
-    background-color: rgb(246, 198, 206);
-}
-nav ul{
-    list-style:none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-nav ul li a{
-    color: black;
-  
-}
-nav a{
-    text-decoration: none;
-    padding: 8px;
+ body{
+    background-color: rgb(250, 209, 216);
+ }
+ *  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
-.gallery{
-    justify-content: center;
-  
-}
-.card-container{
-    display: flex;
-   justify-content: center;
-   gap: 20px;
-   margin-top: 30px;
-
-}
-.card{
-    background-color: rgb(231, 159, 183);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px;
- text-align: center;
- width: 400px;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background-color: #f08fa3 ;
  
-}
-
-
-.card:hover{
-    transform: translateY(-5px);
-}
-
-.card p{
-    font-style: italic;
   
 }
-.card img{
-    width: 70%;
-    border-radius: 10px;
-   margin-top: 20px;
 
+
+.logo {
+  width: 150px;
 }
-footer {
-   
-    text-align: center;
-    padding: 15px;
-  margin-top: 40px;
-}
-.contact form {
-    max-width: 300px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: left;
+.about-section {
+  padding: 80px 20px;
+  background-color:rgb(250, 209, 216);
 }
 
-.contact label {
-    font-weight: bold;
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
 }
 
-.contact input,
-.contact textarea {
-    padding: 10px;
-    border: 2px solid #ffb1c1;
-    border-radius: 10px;
-    font-size: 1em;
-    width: 100px;
-    resize: pointer;
+
+.about-image img {
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 8px;
+  border-radius: 10px;
 }
 
-.contact button :hover {
-    background-color: #ff8fab;
-}
-.about {
-    text-align: center;
-    padding: 40px 20px;
+/* Sağ metin */
+.about-text h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 48px;
+  margin-bottom: 25px;
+  color: #333;
 }
 
-.contact {
-    background-color: #ffe4ec;
-    text-align: center;
-    padding: 50px 20px;
+.about-text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 20px;
+}
 
+
+
+
+
+/* BAŞLIK */
+.navbar h1 {
+  font-size: 32px;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+/* MENU */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-style: italic;
+  font-size: 16px;
+}
+.img {
+  display: flex;
+  justify-content: flex-end;
+  gap: 7px;
+  padding-right: 0%;
+}
+.img img {
+  width: 50%;
+  height: 600px;          
+  object-fit: cover;    /* kırpar */
+  object-position: top;  /*Resmin üst kısmını sabitler, kırpmayı alttan yapar*/
+}
+.footer {
+  background-color: #f08fa3;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+
+
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /*4 tane eşit genişlikte sütun oluşturur*/
+  gap: 40px;
+}
+
+/* Sütun başlıkları */
+.footer h3 {
+  color:black;
+  font-size: 18px;
+  margin-bottom: 20px; /*Paragrafın altına 20px boşluk ekler*/
+  letter-spacing: 1px; /*Harfler arasına 1px boşluk ekler*/
+}
+
+/* Paragraflar */
+.footer p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: black;
+}
+.footer a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease; /*Değişimleri 0.3 sn’de, yumuşak şekilde gösterir*/
+}
+
+.footer a:hover {
+  color: #ec3b5f;
+  transform: translateX(5px);
+}
+
+/* İletişim alanı */
+.contact li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Alt bölüm */
+.footer-bottom {
+  border-top: 1px solid rgb(251, 136, 174);
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color:black;
+}
+
+/* Ödeme ikonları */
+.payments img {
+  height: 24px;
+  margin-left: 10px;
+  filter: grayscale(100%); /*Resim tamamen siyah-beyaz görünür*/
+  opacity: 0.8; /*hafif şeffaf*/
+  transition: 0.3s; /*ani değişimi yumuşatır.*/
+}
+
+.payments img:hover {
+  filter: grayscale(0);
+  opacity: 1;
 }
